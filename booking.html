@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Now — Aviara Travel Co.</title>
+<meta name="description" content="Book your Myanmar or Southeast Asia trip with Aviara — one form, every detail covered.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">AVIARA<span>Travel Co.</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li class="has-dropdown">
+        <a href="our-package.html">Packages <span class="caret"></span></a>
+        <div class="dropdown">
+          <a href="our-package.html"><strong>Our Packages</strong><small>Budget, Standard &amp; Exclusive tiers</small></a>
+          <a href="specialized-package.html"><strong>Specialized Packages</strong><small>Adventure, honeymoon &amp; food journeys</small></a>
+          <a href="personalized-package.html"><strong>Personalized Package</strong><small>Build a trip around you</small></a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta is-active"><a href="booking.html" class="btn btn--gold btn--sm">Book Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero hero--page" style="min-height:38vh; background-image:url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1800&auto=format&fit=crop');">
+  <div class="container">
+    <div class="hero-content">
+      <div class="crumbs"><a href="index.html">Home</a> / <span>Book Now</span></div>
+      <p class="eyebrow">Reserve Your Trip</p>
+      <h1>Book Your Journey</h1>
+      <p class="lead">One form covers your whole trip. A planner reviews every booking personally before confirming.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <form class="form-panel" style="max-width:940px; margin-inline:auto;">
+
+      <!-- TRAVELER DETAILS -->
+      <fieldset class="form-section" style="margin-top:0; padding-top:0; border-top:none;">
+        <legend>Traveler Details</legend>
+        <div class="form-grid">
+          <div class="field">
+            <label for="bk-name">Full Name</label>
+            <input type="text" id="bk-name" name="full_name" placeholder="Your full name" required>
+          </div>
+          <div class="field">
+            <label for="bk-phone">Phone Number</label>
+            <input type="tel" id="bk-phone" name="phone" placeholder="+1 000 000 0000" required>
+          </div>
+          <div class="field">
+            <label for="bk-email">Email</label>
+            <input type="email" id="bk-email" name="email" placeholder="you@email.com" required>
+          </div>
+          <div class="field full">
+            <label for="bk-address">Address</label>
+            <input type="text" id="bk-address" name="address" placeholder="Street, city, country">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- TRIP DETAILS -->
+      <fieldset class="form-section">
+        <legend>Trip Details</legend>
+        <div class="form-grid">
+          <div class="field">
+            <label for="bk-depart">Departure Date</label>
+            <input type="date" id="bk-depart" name="departure_date" required>
+          </div>
+          <div class="field">
+            <label for="bk-return">Return Date</label>
+            <input type="date" id="bk-return" name="return_date" required>
+          </div>
+          <div class="field">
+            <label for="bk-destination">Destination</label>
+            <select id="bk-destination" name="destination">
+              <option>Myanmar</option>
+              <option>Thailand</option>
+              <option>Vietnam</option>
+              <option>Singapore</option>
+              <option>Malaysia</option>
+              <option>Indonesia</option>
+              <option>Cambodia</option>
+              <option>Multi-country route</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="bk-package">Package Type</label>
+            <select id="bk-package" name="package_type">
+              <option>Budget Package</option>
+              <option>Standard Package</option>
+              <option>Exclusive Package</option>
+              <option>Adventure &amp; Nature</option>
+              <option>Honeymoon &amp; Couples</option>
+              <option>Food &amp; Culture</option>
+              <option>Personalized Package</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="bk-adults">Adults</label>
+            <input type="number" id="bk-adults" name="adults" min="1" value="2">
+          </div>
+          <div class="field">
+            <label for="bk-children">Children</label>
+            <input type="number" id="bk-children" name="children" min="0" value="0">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- SPECIAL REQUESTS -->
+      <fieldset class="form-section">
+        <legend>Special Requests</legend>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="bk-requests">Anything we should plan around?</label>
+            <textarea id="bk-requests" name="special_requests" placeholder="Dietary needs, accessibility, celebrations, room preferences..."></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- EMERGENCY CONTACT -->
+      <fieldset class="form-section">
+        <legend>Emergency Contact</legend>
+        <div class="form-grid">
+          <div class="field">
+            <label for="bk-ec-name">Contact Name</label>
+            <input type="text" id="bk-ec-name" name="emergency_name" placeholder="Full name">
+          </div>
+          <div class="field">
+            <label for="bk-ec-phone">Contact Phone</label>
+            <input type="tel" id="bk-ec-phone" name="emergency_phone" placeholder="+1 000 000 0000">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- PERSONALIZED PACKAGE ADD-ON -->
+      <fieldset class="form-section">
+        <legend>If You Selected the Personalized Package</legend>
+        <p class="section-sub">Fill this in only if "Personalized Package" was chosen above — it helps your planner build the itinerary faster.</p>
+        <div class="form-grid">
+          <div class="field">
+            <label for="bk-p-budget">Budget Amount</label>
+            <input type="text" id="bk-p-budget" name="p_budget" placeholder="e.g. $2,000 per person">
+          </div>
+          <div class="field">
+            <label for="bk-p-schedule">Preferred Schedule</label>
+            <input type="text" id="bk-p-schedule" name="p_schedule" placeholder="e.g. flexible within June">
+          </div>
+          <div class="field">
+            <label for="bk-p-interests">Travel Interests</label>
+            <input type="text" id="bk-p-interests" name="p_interests" placeholder="e.g. temples, diving, food">
+          </div>
+          <div class="field">
+            <label for="bk-p-hotel">Preferred Hotel Style</label>
+            <input type="text" id="bk-p-hotel" name="p_hotel" placeholder="e.g. boutique, resort, local">
+          </div>
+          <div class="field">
+            <label for="bk-p-transport">Transportation Preference</label>
+            <input type="text" id="bk-p-transport" name="p_transport" placeholder="e.g. private car, domestic flights">
+          </div>
+          <div class="field">
+            <label for="bk-p-food">Food Preference</label>
+            <input type="text" id="bk-p-food" name="p_food" placeholder="e.g. vegetarian, local street food">
+          </div>
+          <div class="field full">
+            <label for="bk-p-extra">Extra Requests</label>
+            <textarea id="bk-p-extra" name="p_extra" placeholder="Anything else your planner should build around"></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- TERMS + SUBMIT -->
+      <fieldset class="form-section">
+        <label class="field-check">
+          <input type="checkbox" name="terms" required>
+          I agree to Aviara's <a href="#" style="color:var(--primary); text-decoration:underline;">Terms of Service</a> and <a href="#" style="color:var(--primary); text-decoration:underline;">Privacy Policy</a>.
+        </label>
+        <button type="submit" class="btn btn--primary btn--block" style="margin-top:24px;">Submit Booking Request</button>
+        <p style="font-size:.8rem; color:var(--gray); margin-top:14px; text-align:center;">This reserves your request — a planner confirms availability and pricing within one business day.</p>
+      </fieldset>
+
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">AVIARA<span>Travel Co.</span></a>
+      <p>Full-service travel planning across Myanmar and Southeast Asia — flights, stays, guides and visas, handled end to end.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Packages</h4>
+      <ul>
+        <li><a href="our-package.html">Our Packages</a></li>
+        <li><a href="specialized-package.html">Specialized Packages</a></li>
+        <li><a href="personalized-package.html">Personalized Package</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Stay in the loop</h4>
+      <p style="font-size:.85rem; margin-bottom:14px;">Route ideas and season alerts, once a month.</p>
+      <form class="newsletter">
+        <label for="newsletter-email" class="sr-only" style="position:absolute; left:-9999px;">Email address</label>
+        <input type="email" id="newsletter-email" placeholder="Your email">
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Aviara Travel Co. All rights reserved.</span>
+    <div class="flex gap-sm">
+      <a href="#">Privacy Policy</a>
+      <span>·</span>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+</body>
+</html>

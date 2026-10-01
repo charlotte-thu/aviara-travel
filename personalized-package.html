@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personalized Package — Aviara Travel Co.</title>
+<meta name="description" content="Design your own Myanmar or Southeast Asia trip — budget, schedule, destinations, interests and more, all in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">AVIARA<span>Travel Co.</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li class="has-dropdown is-active">
+        <a href="our-package.html">Packages <span class="caret"></span></a>
+        <div class="dropdown">
+          <a href="our-package.html"><strong>Our Packages</strong><small>Budget, Standard &amp; Exclusive tiers</small></a>
+          <a href="specialized-package.html"><strong>Specialized Packages</strong><small>Adventure, honeymoon &amp; food journeys</small></a>
+          <a href="personalized-package.html"><strong>Personalized Package</strong><small>Build a trip around you</small></a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta"><a href="booking.html" class="btn btn--gold btn--sm">Book Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero hero--page" style="background-image:url('https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=1800&auto=format&fit=crop');">
+  <div class="container">
+    <div class="hero-content">
+      <div class="crumbs"><a href="index.html">Home</a> / <a href="our-package.html">Packages</a> / <span>Personalized Package</span></div>
+      <p class="eyebrow">Personalized Package</p>
+      <h1>Create Your Own Dream Journey</h1>
+      <p class="lead">Set the shape of the trip — budget, dates, interests — and a planner turns it into a real itinerary within one business day.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOM TRIP FORM -->
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">Start Building</p>
+      <h2>Tell us what matters, we'll handle the rest</h2>
+    </div>
+
+    <form class="form-panel" style="max-width:920px; margin-inline:auto;">
+
+      <fieldset class="form-section">
+        <legend>Budget &amp; Duration</legend>
+        <p class="section-sub">A rough range is enough — we'll refine it together.</p>
+        <div class="form-grid">
+          <div class="field">
+            <label for="pp-budget">Budget per person</label>
+            <select id="pp-budget" name="budget">
+              <option>$500 – $1,000</option>
+              <option>$1,000 – $2,500</option>
+              <option>$2,500 – $5,000</option>
+              <option>$5,000+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="pp-duration">Trip Duration</label>
+            <select id="pp-duration" name="duration">
+              <option>3–5 days</option>
+              <option>6–9 days</option>
+              <option>10–14 days</option>
+              <option>15+ days</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend>Schedule &amp; Destination</legend>
+        <div class="form-grid">
+          <div class="field">
+            <label for="pp-start">Preferred Start Date</label>
+            <input type="date" id="pp-start" name="start_date">
+          </div>
+          <div class="field">
+            <label for="pp-end">Preferred End Date</label>
+            <input type="date" id="pp-end" name="end_date">
+          </div>
+          <div class="field full">
+            <label for="pp-destination">Destination(s)</label>
+            <input type="text" id="pp-destination" name="destination" placeholder="e.g. Myanmar, Thailand, Vietnam">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend>Interests &amp; Activities</legend>
+        <p class="section-sub">Select everything that sounds like your trip.</p>
+        <div class="chip-group">
+          <label class="chip"><input type="checkbox" name="interests"> Adventure &amp; Trekking</label>
+          <label class="chip"><input type="checkbox" name="interests"> Beach &amp; Islands</label>
+          <label class="chip"><input type="checkbox" name="interests"> Culture &amp; Temples</label>
+          <label class="chip"><input type="checkbox" name="interests"> Food &amp; Markets</label>
+          <label class="chip"><input type="checkbox" name="interests"> Wildlife &amp; Nature</label>
+          <label class="chip"><input type="checkbox" name="interests"> Shopping</label>
+          <label class="chip"><input type="checkbox" name="interests"> Wellness &amp; Spa</label>
+          <label class="chip"><input type="checkbox" name="interests"> Nightlife</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend>Transportation, Stay &amp; Food</legend>
+        <div class="form-grid">
+          <div class="field">
+            <label for="pp-transport">Transportation Preference</label>
+            <select id="pp-transport" name="transport">
+              <option>Private car with driver</option>
+              <option>Mixed private &amp; shared</option>
+              <option>Domestic flights between stops</option>
+              <option>No preference</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="pp-accommodation">Accommodation Style</label>
+            <select id="pp-accommodation" name="accommodation">
+              <option>Budget (motel-level)</option>
+              <option>Standard (3–4 star)</option>
+              <option>Exclusive (5-star / resort)</option>
+              <option>Mix of the above</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="pp-food">Food Preference</label>
+            <select id="pp-food" name="food">
+              <option>Local &amp; street food</option>
+              <option>Fine dining focus</option>
+              <option>Vegetarian / vegan</option>
+              <option>No preference</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="pp-companions">Travel Companions</label>
+            <select id="pp-companions" name="companions">
+              <option>Solo</option>
+              <option>Couple</option>
+              <option>Family with kids</option>
+              <option>Friends group</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend>Your Contact Details</legend>
+        <div class="form-grid">
+          <div class="field">
+            <label for="pp-name">Full Name</label>
+            <input type="text" id="pp-name" name="name" placeholder="Your full name">
+          </div>
+          <div class="field">
+            <label for="pp-email">Email</label>
+            <input type="email" id="pp-email" name="email" placeholder="you@email.com">
+          </div>
+          <div class="field full">
+            <label for="pp-notes">Anything else we should know?</label>
+            <textarea id="pp-notes" name="notes" placeholder="Special occasions, accessibility needs, must-see spots..."></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <div style="margin-top:36px;">
+        <a href="booking.html" class="btn btn--primary btn--block">Continue to Booking</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- INSPIRATION CARDS -->
+<section class="section section--light">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">Need a Starting Point?</p>
+      <h2>Pick a mood, we'll build around it</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="pick-card"><img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=500&auto=format&fit=crop" alt="Luxury travel inspiration"><div class="overlay"><span>Luxury</span></div></div>
+      <div class="pick-card"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=500&auto=format&fit=crop" alt="Adventure travel inspiration"><div class="overlay"><span>Adventure</span></div></div>
+      <div class="pick-card"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=500&auto=format&fit=crop" alt="Family travel inspiration"><div class="overlay"><span>Family</span></div></div>
+      <div class="pick-card"><img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?q=80&w=500&auto=format&fit=crop" alt="Couple travel inspiration"><div class="overlay"><span>Couple</span></div></div>
+      <div class="pick-card"><img src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?q=80&w=500&auto=format&fit=crop" alt="Solo travel inspiration"><div class="overlay"><span>Solo</span></div></div>
+      <div class="pick-card"><img src="https://images.unsplash.com/photo-1544984243-ec57ea16fe25?q=80&w=500&auto=format&fit=crop" alt="Friends group travel inspiration"><div class="overlay"><span>Friends</span></div></div>
+      <div class="pick-card"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=500&auto=format&fit=crop" alt="Nature travel inspiration"><div class="overlay"><span>Nature</span></div></div>
+      <div class="pick-card"><img src="https://images.unsplash.com/photo-1540202404-a2f29016b523?q=80&w=500&auto=format&fit=crop" alt="Beach travel inspiration"><div class="overlay"><span>Beach</span></div></div>
+      <div class="pick-card"><img src="https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=500&auto=format&fit=crop" alt="Culture travel inspiration"><div class="overlay"><span>Culture</span></div></div>
+      <div class="pick-card"><img src="https://images.unsplash.com/photo-1555529771-7888783a18d3?q=80&w=500&auto=format&fit=crop" alt="Shopping travel inspiration"><div class="overlay"><span>Shopping</span></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">AVIARA<span>Travel Co.</span></a>
+      <p>Full-service travel planning across Myanmar and Southeast Asia — flights, stays, guides and visas, handled end to end.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Packages</h4>
+      <ul>
+        <li><a href="our-package.html">Our Packages</a></li>
+        <li><a href="specialized-package.html">Specialized Packages</a></li>
+        <li><a href="personalized-package.html">Personalized Package</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Stay in the loop</h4>
+      <p style="font-size:.85rem; margin-bottom:14px;">Route ideas and season alerts, once a month.</p>
+      <form class="newsletter">
+        <label for="newsletter-email" class="sr-only" style="position:absolute; left:-9999px;">Email address</label>
+        <input type="email" id="newsletter-email" placeholder="Your email">
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Aviara Travel Co. All rights reserved.</span>
+    <div class="flex gap-sm">
+      <a href="#">Privacy Policy</a>
+      <span>·</span>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+</body>
+</html>

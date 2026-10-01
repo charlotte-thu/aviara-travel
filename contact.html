@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Aviara Travel Co.</title>
+<meta name="description" content="Reach the Aviara team — office details, business hours, and a message form for trip questions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">AVIARA<span>Travel Co.</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li class="has-dropdown">
+        <a href="our-package.html">Packages <span class="caret"></span></a>
+        <div class="dropdown">
+          <a href="our-package.html"><strong>Our Packages</strong><small>Budget, Standard &amp; Exclusive tiers</small></a>
+          <a href="specialized-package.html"><strong>Specialized Packages</strong><small>Adventure, honeymoon &amp; food journeys</small></a>
+          <a href="personalized-package.html"><strong>Personalized Package</strong><small>Build a trip around you</small></a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li class="is-active"><a href="contact.html">Contact</a></li>
+      <li class="nav-cta"><a href="booking.html" class="btn btn--gold btn--sm">Book Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero hero--page" style="background-image:url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1800&auto=format&fit=crop');">
+  <div class="container">
+    <div class="hero-content">
+      <div class="crumbs"><a href="index.html">Home</a> / <span>Contact</span></div>
+      <p class="eyebrow">Get In Touch</p>
+      <h1>Let's Talk About Your Trip</h1>
+      <p class="lead">Questions about a route, a quote, or a booking already in motion — the desk below reaches a real planner, not a queue.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+
+    <div>
+      <div class="contact-info-card">
+        <div class="item">
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div><h4>Office</h4><p>27 Bogyoke Aung San Road, Yangon, Myanmar</p></div>
+        </div>
+        <div class="item">
+          <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          <div><h4>Phone</h4><p>+95 1 234 5678</p></div>
+        </div>
+        <div class="item">
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+          <div><h4>Email</h4><p>hello@aviara-travel.com</p></div>
+        </div>
+        <div class="item">
+          <div class="icon"><i class="fa-regular fa-clock"></i></div>
+          <div><h4>Business Hours</h4><p>Mon–Sat, 9:00 AM – 7:00 PM (MMT)<br>24/7 support for travelers on active trips</p></div>
+        </div>
+      </div>
+
+      <div class="map-placeholder">
+        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop" alt="Map view of Yangon, Myanmar near Aviara's office">
+        <div class="map-pin"><i class="fa-solid fa-location-dot"></i></div>
+      </div>
+    </div>
+
+    <div class="form-panel">
+      <h3 style="margin-bottom:6px;">Send us a message</h3>
+      <p style="font-size:.9rem; margin-bottom:28px;">We reply within one business day — usually sooner.</p>
+      <form>
+        <div class="form-grid">
+          <div class="field">
+            <label for="c-name">Full Name</label>
+            <input type="text" id="c-name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" placeholder="you@email.com" required>
+          </div>
+          <div class="field">
+            <label for="c-phone">Phone Number</label>
+            <input type="tel" id="c-phone" name="phone" placeholder="+1 000 000 0000">
+          </div>
+          <div class="field">
+            <label for="c-subject">Subject</label>
+            <select id="c-subject" name="subject">
+              <option>General Inquiry</option>
+              <option>Package Question</option>
+              <option>Existing Booking</option>
+              <option>Partnership</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" placeholder="Tell us about the trip you're planning..."></textarea>
+          </div>
+          <div class="field full">
+            <button type="submit" class="btn btn--primary btn--block">Send Message</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--light">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">FAQ</p>
+      <h2>Common questions before you write in</h2>
+    </div>
+    <div class="accordion" style="max-width:760px; margin-inline:auto;">
+      <details open>
+        <summary>How far in advance should I book?</summary>
+        <p>For standard packages, 4–6 weeks is comfortable. Exclusive tier trips and peak-season dates (December–February) are best locked in 2–3 months out.</p>
+      </details>
+      <details>
+        <summary>Do you handle visas for every destination?</summary>
+        <p>Yes — visa assistance is included across all package tiers. We'll tell you exactly what's needed for your passport and itinerary.</p>
+      </details>
+      <details>
+        <summary>Can I combine multiple countries in one trip?</summary>
+        <p>It's most of what we do. Tell us your total days and we'll suggest a route that connects well instead of forcing in extra stops.</p>
+      </details>
+      <details>
+        <summary>What if my flight is delayed or cancelled?</summary>
+        <p>Our 24-hour support line rebooks transport and notifies your hotels and guides automatically — no need to manage it yourself.</p>
+      </details>
+      <details>
+        <summary>Is travel insurance required?</summary>
+        <p>It's optional but strongly recommended, and can be added to any package during booking.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">AVIARA<span>Travel Co.</span></a>
+      <p>Full-service travel planning across Myanmar and Southeast Asia — flights, stays, guides and visas, handled end to end.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Packages</h4>
+      <ul>
+        <li><a href="our-package.html">Our Packages</a></li>
+        <li><a href="specialized-package.html">Specialized Packages</a></li>
+        <li><a href="personalized-package.html">Personalized Package</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Stay in the loop</h4>
+      <p style="font-size:.85rem; margin-bottom:14px;">Route ideas and season alerts, once a month.</p>
+      <form class="newsletter">
+        <label for="newsletter-email" class="sr-only" style="position:absolute; left:-9999px;">Email address</label>
+        <input type="email" id="newsletter-email" placeholder="Your email">
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Aviara Travel Co. All rights reserved.</span>
+    <div class="flex gap-sm">
+      <a href="#">Privacy Policy</a>
+      <span>·</span>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+</body>
+</html>
