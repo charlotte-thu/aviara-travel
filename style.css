@@ -3390,3 +3390,7 @@ legend{
     flex: 0 0 80%;
   }
 }
+nav
+{ 
+ z-index : 99999;
+}
