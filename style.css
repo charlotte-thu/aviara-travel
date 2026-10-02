@@ -191,8 +191,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 @media (max-width: 900px) {
 
+  /* Header is the anchor for the dropdown */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: visible;
+  }
+
   .nav {
-    position: relative;
+    position: static;
   }
 
   /* Hamburger button */
@@ -206,7 +214,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     border-radius: var(--r-sm);
     background: rgba(255, 255, 255, .1);
     cursor: pointer;
-    z-index: 1001;
+    position: relative;
+    z-index: 1002;
   }
 
   .hamburger span {
@@ -217,13 +226,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     transition: transform .25s ease, opacity .25s ease;
   }
 
-  /* Mobile menu */
+  /* Dropdown menu overlays the homepage */
   .nav-menu {
     position: absolute;
     top: 100%;
     left: 30%;
     right: 0;
-    bottom: auto;
 
     display: flex;
     flex-direction: column;
@@ -238,7 +246,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
     transform: translateX(110%);
     transition: transform .35s ease;
-    z-index: 1000;
+    z-index: 1001;
   }
 
   .nav-menu a:not(.btn) {
@@ -246,7 +254,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     border-radius: var(--r-sm);
   }
 
-  /* Dropdown */
+  /* Dropdown submenu */
   .dropdown {
     position: static;
     opacity: 1;
@@ -274,12 +282,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     background: rgba(255, 255, 255, .08) !important;
   }
 
-  /* Hide desktop CTA */
   .nav-cta {
     display: none;
   }
 
-  /* Show menu when checkbox is checked */
+  /* Open menu */
   .nav-toggle:checked ~ .nav-menu {
     transform: translateX(0);
   }
@@ -297,8 +304,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     transform: translateY(-7px) rotate(-45deg);
   }
 }
-
-
 
 /* ---------------------------------------------------------------------- */
 /* 5. HERO                                                                */
