@@ -3350,3 +3350,52 @@ nav
 { 
  z-index : 99999;
 }
+
+/* Mobile full-page dropdown overlay */
+@media (max-width: 900px) {
+
+  /* Remove the fixed-position containing effect */
+  .site-header {
+    overflow: visible;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  /* Keep the header above the homepage */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  /* Full dropdown panel */
+  .nav-menu {
+    position: fixed !important;
+    top: 86px !important;
+    left: 30% !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+    width: auto;
+    height: auto;
+    max-height: none !important;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    background: var(--navy);
+    padding: 24px 28px 40px;
+    gap: 4px;
+
+    transform: translateX(110%);
+    transition: transform .35s ease;
+    z-index: 9999;
+  }
+
+  /* Open the panel */
+  .nav-toggle:checked ~ .nav-menu {
+    transform: translateX(0);
+  }
+}
